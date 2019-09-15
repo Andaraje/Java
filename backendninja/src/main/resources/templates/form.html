@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js"></script>
+    <title>Brujula</title>
+</head>
+<body>
+    <header>
+        <img src="img/cabecera.png" alt="cabecera">
+    </header>
+    <div class="cuerpo">
+        
+        <table>
+            <thead>
+                    <h1>Especifica tus datos personales</h1>
+            </thead>
+            <tbody>
+                    <form action="#" th:action="@{example3/addperson}" th:object="${person}" method="post">
+                            <tr>
+                                <td>
+                                    Nombre </br>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    Apellidos </br>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Telefono </br>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    Correo </br>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                    Sexo </br>
+                                    <select name="" id="">
+                                        <option value="Hombre">Hombre</option>
+                                        <option value="Mujer">Mujer</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select> <br>
+                                
+                            </tr>
+                        </form>
+            </tbody>
+                
+            <tfoot>
+                    <tr>
+                            <input type="button" value="Guardar">
+                    </tr>
+            </tfoot>
+                    
+                
+            
+        </table>
+    </div>
+</body>
+</html>
